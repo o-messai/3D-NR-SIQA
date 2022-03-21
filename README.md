@@ -11,7 +11,6 @@ The use of 3D technologies is growing rapidly, and stereoscopic imaging is usual
 
 Publisher URL: https://www.sciencedirect.com/science/article/pii/S0925231222000029
 
-DOI: 10.1016/j.image.2019.115772
 
 ## IQA datasets:
 
