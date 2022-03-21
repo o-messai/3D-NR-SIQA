@@ -15,7 +15,7 @@ DOI: 10.1016/j.image.2019.115772
 
 ## IQA datasets:
 
-We have reported experimental results on different IQA datasets including LIVE 3D Phase I, LIVE 3D Phase II, and ICV 3D.
+We have reported experimental results on different IQA datasets including LIVE 3D Phase I, LIVE 3D Phase II, Waterloo 3D Phase 1 and Phase 2.
 
 # Citation :
 
