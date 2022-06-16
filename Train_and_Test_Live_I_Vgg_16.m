@@ -10,7 +10,8 @@
 % O. Messai, A. Chetouani, F. Hachouf, and Z. Ahmed Seghir, “3D Saliency guided Deep Quality predictor for No-Reference Stereoscopic Images”, in Neurocomputing Journal, January 06, 2022, Elsevier.
 
 clc;clear;close all;
-addpath ( genpath ( '.mat files' ) ); 
+addpath ( genpath ( 'mat files' ) ); 
+addpath ( 'Train codes for other databases' );
 load('data.mat');
 load('norm_dL1.mat') % Normalized DMOS
 load Cyclopean_L1.mat % Load the Cyclyopean image
@@ -222,7 +223,7 @@ for Sal_Value = [0.3:0.1:0.3] % Saliency threshold fixed to 0.3
         SB = dmos;               % Subjective Score
         OB = FINAL_score';        % Objective Score
         %figure,
-        [Srocc,Krooc, cc,rmse] = logistic_cc(double(OB),double(SB))
+        [Srocc,Krooc, cc,rmse] = logistic_distortions_cc_L1(double(OB),double(SB))
         
         %% Stock the results for mutliple iterations
         Score_Stock{R} = FINAL_score';
